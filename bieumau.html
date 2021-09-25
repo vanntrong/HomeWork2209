@@ -1,0 +1,132 @@
+<!-- Võ Văn Trọng 6151071109 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="/bieumau.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="form__wrapper">
+      <h3 class="form__name">Sign up</h3>
+      <form action="/thanhcong.html" class="form__container" target="blank">
+        <!-- Name -->
+        <div class="form__sign-name">
+          <label for="fname" class="form__label"
+            >First Name:
+            <input
+              type="text"
+              class="form__input"
+              placeholder="First Name"
+              required
+              size="1"
+              oninvalid="this.setCustomValidity('What is your name?')"
+            />
+          </label>
+          <label for="fname" class="form__label"
+            >Last Name:
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Last Name"
+              required
+              size="1"
+              oninvalid="this.setCustomValidity('What is your name?')"
+            />
+          </label>
+        </div>
+        <!-- date of birth -->
+        <div class="form__sign-date">
+          <label for="date" class="form__label"
+            >Date of birth:
+            <input
+              type="date"
+              class="form__input"
+              required
+              oninvalid="this.setCustomValidity('What is your date of birth ?')"
+            />
+          </label>
+        </div>
+        <!-- gender -->
+        <div class="form__sign-gender">
+          <label for="gender" class="form__label"
+            >Gender:
+            <div class="form__gender-wrapper">
+              <div class="form__gender-value">
+                <span class="form__gender-text">Female</span>
+                <input
+                  class="form__gender-input"
+                  type="radio"
+                  name="gender-value"
+                  value="female"
+                  required
+                  oninvalid="this.setCustomValidity('What is your gender?')"
+                />
+              </div>
+              <div class="form__gender-value">
+                <span class="form__gender-text">Male</span>
+                <input
+                  class="form__gender-input"
+                  type="radio"
+                  name="gender-value"
+                  value="male"
+                  required
+                  oninvalid="this.setCustomValidity('What is your gender?')"
+                />
+              </div>
+              <div class="form__gender-value">
+                <span class="form__gender-text">Other</span>
+                <input
+                  class="form__gender-input"
+                  type="radio"
+                  name="gender-value"
+                  value="other"
+                  required
+                  oninvalid="this.setCustomValidity('What is your gender?')"
+                />
+              </div>
+            </div>
+          </label>
+        </div>
+        <!-- password -->
+        <div class="form__sign-password">
+          <label for="password" class="form__label"
+            >Password:
+            <input
+              type="password"
+              class="form__input"
+              placeholder="Password"
+              required
+              oninvalid="this.setCustomValidity('Please enter a password')"
+            />
+          </label>
+        </div>
+        <div class="form__sign-password">
+          <label for="password" class="form__label"
+            >Confirm:
+            <input
+              type="password"
+              class="form__input"
+              placeholder="Confirm Pasword"
+              required
+              oninvalid="this.setCustomValidity('Please confirm password again')"
+            />
+          </label>
+        </div>
+        <div class="form__sign-btn">
+          <div class="form-btn">
+            <input type="submit" class="form__input-btn" value="Sign up" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
